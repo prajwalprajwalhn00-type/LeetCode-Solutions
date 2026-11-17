@@ -1,0 +1,20 @@
+import java.util.*;
+
+// find the biggest and smallest number in 3 numbers
+public class Main {
+    public static void main(String[] args) {
+        // we take the input
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        int z = sc.nextInt();
+
+        // process the input
+        int biggest = Math.max(x, Math.max(y, z));
+        int smallest = Math.min(x, Math.min(y, z));
+
+        // display output
+        System.out.println("Biggest: " + biggest);
+        System.out.println("Smallest: " + smallest);
+    }
+}
